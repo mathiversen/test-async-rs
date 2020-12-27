@@ -1,12 +1,9 @@
-use std::{thread::sleep, time::Duration};
+use async_std::task;
+use std::time::Duration;
 
-async fn heavy_computation(sleep_sec: u64) -> () {
-    sleep(Duration::from_secs(sleep_sec));
-}
-
-pub async fn do_something(id: u64, sleep_sec: u64) -> () {
+pub async fn do_something(id: u64, sleep_sec: u64) {
     println!("#{} started", id);
-    heavy_computation(sleep_sec).await;
+    task::sleep(Duration::from_secs(sleep_sec)).await;
     println!("#{} ended, after {} seconds", id, sleep_sec);
 }
 
