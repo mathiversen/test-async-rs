@@ -1,6 +1,6 @@
 use async_std::prelude::FutureExt;
 use std::time::Duration;
-use test_async::*;
+use test_async_rs::*;
 
 // We can use delay to postpone the async execution to later.
 // Here we execute a function that doesnt have any delay, but we add delay to when we envoke the future.

@@ -1,4 +1,4 @@
-use test_async::*;
+use test_async_rs::*;
 
 // If we use await on multiple async tasks they will execute sequentially. This is not an efficient way of dealing with async tasks.
 

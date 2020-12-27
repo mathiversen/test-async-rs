@@ -1,5 +1,5 @@
 [package]
-name = "test-async"
+name = "test-async-rs"
 version = "0.1.0"
 authors = ["Mathias Iversen <work@mathiasiversen.com>"]
 edition = "2018"

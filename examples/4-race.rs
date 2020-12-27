@@ -1,5 +1,5 @@
 use async_std::prelude::FutureExt;
-use test_async::*;
+use test_async_rs::*;
 
 // In this example we await three tasks but break as soon as one of them finish
 

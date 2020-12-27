@@ -1,6 +1,6 @@
 use async_std::prelude::FutureExt;
 use std::time::Duration;
-use test_async::*;
+use test_async_rs::*;
 
 // We can use timeout to break async runtime if it takes to long time to execute
 

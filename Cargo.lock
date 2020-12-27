@@ -550,7 +550,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "test-async"
+name = "test-async-rs"
 version = "0.1.0"
 dependencies = [
  "async-std",

@@ -1,5 +1,5 @@
 use async_std::prelude::FutureExt;
-use test_async::*;
+use test_async_rs::*;
 
 // In this example we await all functions at the same time. This is very efficient as all of the tasks wait in parallel.
 
