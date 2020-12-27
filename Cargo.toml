@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 futures = "0.3.8"
-async-std = "1.8.0"
+async-std = { version = "1.8.0", features = [ "attributes", "unstable" ]}

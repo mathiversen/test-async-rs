@@ -1,10 +1,21 @@
 use async_std::task;
-use std::time::Duration;
+pub use std::time::{Duration, Instant};
 
 pub async fn do_something(id: u64, sleep_sec: u64) {
     println!("#{} started", id);
     task::sleep(Duration::from_secs(sleep_sec)).await;
     println!("#{} ended, after {} seconds", id, sleep_sec);
+}
+
+pub fn end(start: Instant, expected: u64) {
+    let end = start.elapsed().as_secs();
+
+    assert_eq!(end, expected);
+    println!("Done after: {} seconds", end);
+}
+
+pub fn start() -> Instant {
+    Instant::now()
 }
 
 #[cfg(test)]
